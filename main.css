@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+*{box-sizing: border-box;}
+body{background: url("images/softswirls.jpg.png")no-repeat; background-size: cover}
+.page-title {color:#D81B60}
+#container{width: 800px; margin: 0 auto; padding: 10px;}
+.left{width:380px;
+height:325px;
+background-color: rgba(160,71,73,0.3);
+border-radius: 25px;
+float:left;
+margin-right:5px;
+padding:10px}
+.right{width:380px;
+height:325px;
+background-color: rgba(160,71,73,0.3);
+border-radius: 25px;
+float:left;
+margin-right:5px;
+padding: 10px}
