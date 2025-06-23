@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 	<title>selfcaresite</title>
 	<link rel="stylesheet" href="main.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
@@ -13,16 +18,24 @@
 		<section>
 		<article class="left">
 			<h3>Daily Affirmations</h3>
-			<img src="images/selflove.jpg.png" alt="positive quote" title:="learn to love yourself" width="200px">
+			<h6>Hint: Click the image below to reveal your daily affirmation!</h6>
+			<img src="images/selflove.jpg.png" usemap="#caremap" alt="positive quote" title="learn to love yourself" width="200px">
+            <map name="caremap">
+              <area shape="rect" coords="7,12,191,188" href="https://bestofaffirmations.com/generator/" alt="positive quote" target="_blank">
+            </map>
 			<p>Keep going, you are doing better than you think!</p>
 			</article>
 		<article class="right">
-			<h3>Self-Care Checklist</h3>
-			<img src="images/checklist.jpg.png" alt="checklsit" title:="daily self care checklist" width="225px">
+			<h3>Helpful Resources</h3>
+			<ul>
+			<li><a href="https://www.nytimes.com/section/style/self-care" target="_blank">Self-Care Articles</a></li>
+			<li><a href="https://www.headspace.com/" target="_blank">Meditation</a></li>
+			<li><a href="https://www.sleepfoundation.org" target="_blank">Sleep Tips</a></li>	
+			</ul>
 			</article>
 		</section>
 		<footer>
-			<p>Copyright Sarah Gibbon 2025</p>
+		  <p>Copyright Sarah Gibbon 2025</p>
 		</footer>
 	</div>
 </body>
