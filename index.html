@@ -17,7 +17,7 @@
 	<nav></nav>
 		<section>
 		<article class="left">
-			<h3>Daily Affirmations</h3>
+			<h3>Daily Affirmations 🌼</h3>
 			<h6>Hint: Click the image below to reveal your daily affirmation!</h6>
 			<img src="images/selflove.jpg.png" usemap="#caremap" alt="positive quote" title="learn to love yourself" width="200px">
             <map name="caremap">
@@ -26,17 +26,107 @@
 			<p>Keep going, you are doing better than you think!</p>
 			</article>
 		<article class="right">
-			<h3>Helpful Resources</h3>
+			<h3>Daily Tarot Pull 🃏</h3>
+			<p>Feeling cosmic? Click the buttom below to reveal a card for guidance today!</p>
+			<button onclick="pullTarotCard()">Reveal My Card</button>
+			<div id="tarot-card-output"></div>
+			</article>
+		</section>
+		<div style="clear: both;"></div>
+		<section class="wellness-table">
+		<h3>🧘🏼‍♀️ Weekly Self-Care Tracker</h3>
+			<table>
+			<caption>Your Week at a Glance</caption>
+				<thead>
+				<tr>
+					<th scope="col">Day</th>
+					<th scope="col">Activity</th>
+					<th scope="col">Mood</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>Monday</td>
+					<td>Journaling</td>
+					<td>☺️</td>
+					</tr>
+					<tr>
+					<td>Tuesday</td>
+					<td>Walk in Nature</td>	
+					<td>🌧️</td>	
+					</tr>
+					<tr>
+					<td>Wednesday</td>
+					<td>Gratitude list</td>
+					<td>✨</td>
+					</tr>
+					<tr>
+					<td>Thursday</td>
+					<td>Streching</td>
+					<td>😌</td>
+					</tr>
+					<tr>
+					<td>Friday</td>
+					<td>Face mask + tea</td>
+					<td>🌺</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section class="list-section">
+		<h3>🌿 My Top Self-Care Activities</h3>
+			<ul class="emoji-bullets">
+			<li>Listening to music</li>
+			<li>Bubble baths</li>
+			<li>Journaling</li>
+			<li>Streching or Yoga</li>
+			<li>Lighting a candle and chilling</li>	
+			</ul>
+		<h3>😴 Steps for a Calm Night</h3>
+			<ol class="calm-steps">
+			<li>Put your phone away</li>
+			<li>Make a cup og tea</li>	
+			<li>Write down 3 good things</li>	
+			<li>Do 5 minutes of deep breathing</li>	
+			<li>Rest and recharge</li>
+			</ol>
+		</section>
+		<section class="iframe-section">
+		<h3>Start Your Morning with Intention ☀️</h3>
+		<p>Begin your day with affirmations that set the tone for peace and confidence.</p>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/-9KLB2HI9BI?si=nj8bfB-2L-w4tEv7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<h3>Wind Down at Night 🌙</h3>
+			<p>Unplug with this soothing Spotify playlist to end your day in calm.</p>
+			<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1EIgWN8eaBowsT?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+		</section>
+		<section class="resources-section">
+		<h3>Helpful Resources 🖥️</h3>
 			<ul>
 			<li><a href="https://www.nytimes.com/section/style/self-care" target="_blank">Self-Care Articles</a></li>
 			<li><a href="https://www.headspace.com/" target="_blank">Meditation</a></li>
 			<li><a href="https://www.sleepfoundation.org" target="_blank">Sleep Tips</a></li>	
 			</ul>
-			</article>
 		</section>
-		<footer>
+	  <footer>
 		  <p>Copyright Sarah Gibbon 2025</p>
 		</footer>
 	</div>
+	<script>
+	function pullTarotCard(){
+		const cards= [
+		{name:"The Empress 👑", message:"You are blooming. Lean into your creative, nurturing energy today."},
+		{name:"The Star ⭐️", message:"Hope is alive in you. Trust your intuition and keep reaching."},
+		{name:"The Hermit 🐢", message:"Pull inward. Solitude will bring you clarity right now."},
+		{name:"The Sun ☀️", message:"Joy, success, and warmth surround you. Let yourself shine!"},
+		{name:"The Moon 🌙", message:"Things may feel unclear. Go slow and trust your inner voice"},
+		{name:"The High Priestess", message:"The answers are within you. Tune in to your quiet wisdom."}];
+	const randomIndex = Math.floor(Math.random() * cards.length);
+	const card = cards[randomIndex];
+	document.getElementById("tarot-card-output").innerHTML= `
+		<div class="tarot-card">
+		<h4>${card.name}</h4>
+		<p>${card.message}</p>
+		</div>`;}
+	</script>
 </body>
 </html>
