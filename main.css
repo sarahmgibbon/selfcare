@@ -29,7 +29,7 @@ a:hover {transform: scale(1.2); color:#B8326A; text-decoration: underline;}
 	flex-wrap: wrap;}
 .navbar{
 	text-align: center;
-	background-color: rgba(235,160,171,1.00);
+	background-color: rgba(235,160,171,1);
 	padding: 10px;
 	margin-bottom: 10px;
 	border-radius: 10px;}
@@ -207,5 +207,4 @@ margin: 40px auto;
 	color: #D81B60;
 	margin-bottom: 10px;}
 .audio-wrapper{
-	text-align: center;
-	margin-top: 15px;}
+	text-align: center;}
