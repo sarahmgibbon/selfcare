@@ -15,21 +15,35 @@ a:visited {color:#a04860; text-decoration: none;}
 a:active {color: #F06292;}
 a:hover {transform: scale(1.2); color:#B8326A; text-decoration: underline;}
 #container{width: 800px; margin: 0 auto; padding: 10px; background-color: rgba(255,255,255,0.2); border-radius: 15px;}
-.left{width:380px;
-height:450px;
-background-color: rgba(160,71,73,0.3);
-border-radius: 25px;
-float:left;
-margin-right:5px;
-padding:10px}
-.right{width:380px;
-height:450px;
-background-color: rgba(160,71,73,0.3);
-border-radius: 25px;
-float:left;
-margin-right:5px;
-padding: 10px}
-footer { clear: both; text-align: center; padding: 20px; font-size: 14px; color: #535353}
+.left, .right {
+	width: 48%;
+	height: 450px;
+	background-color: rgba(160, 71, 73,0.3);
+	border-radius: 25px;
+	padding: 10px;
+    margin-bottom: 0;}
+.flex-container{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	flex-wrap: wrap;}
+.navbar{
+	text-align: center;
+	background-color: rgba(235,160,171,1.00);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;}
+.navbar a{
+	margin: 0 15px;
+	text-decoration: none;
+	color: #B8326A;
+	font-weight: bold;
+	font-size: 20px;}
+.navbara:hover {
+	text-decoration: underline;
+	color: #D81B60;}
+html{
+	scroll-behavior: smooth;}
 nav { text-align: center; margin-bottom: 20px;}
 .imagemap{clear: both; text-align: center; margin-top: 40px;}
 .wellness-table h3{
@@ -39,7 +53,7 @@ nav { text-align: center; margin-bottom: 20px;}
 	margin-bottom: 10px;}
 table{width: 100%;
 	border-collapse: collapse;
-	margin: 20px 0;
+	margin: 10px 0;
 	background-color: rgba(255, 255, 255, 0.6);
 	border-radius: 10px;
 	overflow: hidden;
@@ -142,3 +156,56 @@ margin: 40px auto;
 .resources-section a:hover {
 	text-decoration: underline;
 	color: #D81B60;}
+.checkin-form{
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 30px;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 15px;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);}
+.checkin-form h3 {
+	color: #D81B60;
+	font-family: 'Playfair Display', serif;
+	margin-bottom: 20px;}
+.checkin-form label {
+	display: block;
+	margin-top: 15px;
+	color: #4A4A4A;
+	font-weight: 500;
+	text-align: left;}
+.checkin-form input,
+.checkin-form textarea,
+.checkin-form select{
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	border-radius: 10px;
+	border: 1px solid #D81B60;
+	font-family: 'Poppins', sans-serid;
+	font-size: 16px;}
+.checkin-form button{
+	margin-top: 20px;
+	background-color: #D81B60;
+	color: white;
+	border: none;
+	padding: 12px 20px;
+	font-size: 16px;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;}
+.checkin-form button:hover{
+	background-color: #B8326A;}
+.audio-section {
+	text-align: center;
+	margin-top: 0px;
+	padding: 10px;
+	border-radius: 15px;}
+.audio-section h3{
+	font-family: 'Playfair Display', serif;
+	color: #D81B60;
+	margin-bottom: 10px;}
+.audio-wrapper{
+	text-align: center;
+	margin-top: 15px;}

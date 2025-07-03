@@ -12,10 +12,17 @@
 </head>
 <body>
 	<div id="container">
-	<header><h1 class="page-title">Sarah's Self Care</h1>
+	<header id="top"><h1 class="page-title">Sarah's Self Care</h1>
 		<p>Your go to space for daily <strong>self love.</strong></p></header>
-	<nav></nav>
-		<section>
+	<nav class="navbar">
+		<div class="navbar">
+		<a href="#top">Home</a>
+		<a href="#about-section">About</a>
+		<a href="#contact-section">Contact</a>
+			</div>
+		</nav>
+		<section class="intro-section">
+		<div class="flex-container">
 		<article class="left">
 			<h3>Daily Affirmations 🌼</h3>
 			<h6>Hint: Click the image below to reveal your daily affirmation!</h6>
@@ -27,10 +34,20 @@
 			</article>
 		<article class="right">
 			<h3>Daily Tarot Pull 🃏</h3>
-			<p>Feeling cosmic? Click the buttom below to reveal a card for guidance today!</p>
+			<p>Feeling cosmic? Click the button below to reveal a card for guidance today!</p>
 			<button onclick="pullTarotCard()">Reveal My Card</button>
 			<div id="tarot-card-output"></div>
 			</article>
+				</div>
+		</section>
+		<section class="audio-section">
+		  <h3>Take a Deep Breath</h3>
+<p>Play this calming audio for a mini moment of peace.</p>
+			<div class="audio-wrapper">
+		<audio controls>
+			<source src="rain-and-wind-chimes-314370.mp3" type="audio/mp3">
+			</audio>
+				</div>
 		</section>
 		<div style="clear: both;"></div>
 		<section class="wellness-table">
@@ -73,7 +90,7 @@
 				</tbody>
 			</table>
 		</section>
-		<section class="list-section">
+		<section id="about-section" class="list-section">
 		<h3>🌿 My Top Self-Care Activities</h3>
 			<ul class="emoji-bullets">
 			<li>Listening to music</li>
@@ -107,6 +124,27 @@
 			<li><a href="https://www.sleepfoundation.org" target="_blank">Sleep Tips</a></li>	
 			</ul>
 		</section>
+		<section id="contact-section" class="form-section">
+			<h3>Self-Care Check-In</h3>
+		<form action="#" method="post">
+			<label for="name">Your Name</label><br>
+			<input type="text" id="name" required><br><br>
+			<label for="email">Your Email:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+			<label>How are you feeling today?</label><br>
+			<input type="radio" id="calm" name="mood" value="Calm">
+			<label for="calm">Calm</label><br>
+			<input type="radio" id="anxious" name="mood" value="Anxious">
+			<label for="anxious">Anxious</label><br>
+			<input type="radio" id="energized" name="mood" value="Energized">
+			<label for="energized">Energized</label><br><br>
+			<label for="message">What would you like to share with us?</label><br>
+			<textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+			<label>
+			<input type="checkbox" name="followup" value="yes">Please follow up with me.</label><br><br>
+			<button type="submit">Submit Check-In</button>
+		</form>
+	</section>
 	  <footer>
 		  <p>Copyright Sarah Gibbon 2025</p>
 		</footer>
