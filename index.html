@@ -9,6 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>	
 </head>
 <body>
 	<div id="container">
@@ -145,6 +148,31 @@
 			<button type="submit">Submit Check-In</button>
 		</form>
 	</section>
+		 <section class="column-section">
+		<h3>Self-Care Boosts</h3>
+			 <div class="column-container">
+			 <div class="boost-item">Drink more water</div>
+			 <div class="boost-item">Go outside for 10 minutes</div>	 
+		   	 <div class="boost-item">Write a kind note to yourself</div>	 
+			 </div>
+		</section>
+<section class="accordion-section">
+		<h3>Self-Care Q + A</h3>
+	<div id="selfcare-accordion">
+	<h4>What's one quick self-care tip?</h4>
+	<div>
+	<p>Take three slow breaths. That's it. You're already doing great.</p>
+	</div>
+	<h4>How can I unwind at night?</h4>
+	<div>
+		<p>Dim the lights, light a candle, and play calming sounds deom your favorite playlist.</p>
+		</div>	
+	<h4>What if I feel overwhelmed?</h4>
+		<div>
+		<p>Pause. Write down three things you're grateful for. Shift your energy gently.</p>
+		</div>
+	</div>	
+		</section>
 	  <footer>
 		  <p>Copyright Sarah Gibbon 2025</p>
 		</footer>
@@ -165,6 +193,10 @@
 		<h4>${card.name}</h4>
 		<p>${card.message}</p>
 		</div>`;}
+	</script>
+	<script>
+	$(function() {
+		$("#selfcare-accordion").accordion();});
 	</script>
 </body>
 </html>
