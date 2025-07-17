@@ -17,7 +17,7 @@
 <body>
 	<div id="container">
 	<header id="top"><h1 class="page-title">
-		<img src="images/SGLogo.png" alt="Sarah's Self Care Logo" class="logo-image">
+		<img src="images/SGLogo.jpg.png" alt="Sarah's Self Care Logo" class="logo-image">
 		</h1>
 		<p class="bloom-subtitle">Gently <strong>bloom</strong> from within.</p></header>
 	<nav class="navbar">
@@ -36,8 +36,8 @@
               <area shape="rect" coords="7,12,191,188" href="https://bestofaffirmations.com/generator/" alt="positive quote" target="_blank">
 			</map>
 			<hr>
-			<h6>Here's one picked just for you today:</h6>
-			<p id="affirmation-text">Loading...</p>
+			<button id="affirmation-button" onClick="getAffirmation()">Give me a Bonus Affirmation!</button>
+			<p id="affirmation-output"></p>
 			</div>
 		<div class="daily-box">
 			<h3>Daily Tarot Pull 🃏</h3>
@@ -212,15 +212,19 @@
 		$("#selfcare-accordion").accordion();});
 	</script>
 	<script>
-	async function fetchAffirmation() {
-		try{
-			const response = await fetch("https://www.affirmations.dev/");
-			const data = await response.json();
-			document.getElementById("affirmation-text").textContent = data.affirmation;}
-		catch (error){
-			document.getElementById("affirmation-text").textContent = "You are doing great. Keep going!";}
-		}
-	fetchAffirmation();
+	function getAffirmation(){
+		const button = document.getElementById("affirmation-button");
+		const output = document.getElementById("affirmation-output");
+		button.innerText = "Picked just for you...";
+		fetch("https://www.affirmations.dev/")
+		.then(response => response.json())
+		.then(data => {
+			output.innerText = data.affirmation;
+			button.innerText = "Give me an Affirmation";})
+		.catch(error => {
+			output.innerText = "You are doing great. Keep going!";
+			console.error("API error:", error);
+		});}
 	</script>
 </body>
 </html>
