@@ -1,24 +1,35 @@
 @charset "UTF-8";
 /* CSS Document */
 *{box-sizing: border-box;}
-body{background: url("images/softswirls.jpg.png")no-repeat;
+body{background-color: #F5F3CB;
 	background-size: cover;
 	font-family: 'Poppins', sans-serif;
 	color:#4A4A4A;
 	font-size: 18px;
 	line-height: 1.6;}
-.page-title {color:#D81B60; font-family: 'Playfair Display', serif; text-align: center; padding: 20px 0;}
-h1, h2, h3 {color:#d81b60; font-family: 'Playfair Display', serif;}
-a{display: inline-block; transition: transform 0.2s ease-in-out; color: #d81b60; text-decoration: none;}
-a:link{color: #d81b60; text-decoration: none;}
-a:visited {color:#a04860; text-decoration: none;}
+.page-title {color:#753743; font-family: 'Playfair Display', serif; text-align: center; padding: 20px 0;}
+.logo-image {
+	display: block;
+	margin: 0 auto;
+	max-width: 250px;
+	height: auto;}
+.bloom-subtitle{
+	font-family: 'Playfair Display', serif;
+	text-align: center;
+	font-size: 20px;
+	margin-top: -10px;
+	color: #753743;}
+h1, h2, h3 {color:#753743; font-family: 'Playfair Display', serif;text-align: center}
+a{display: inline-block; transition: transform 0.2s ease-in-out; color: #753743; text-decoration: none;}
+a:link{color: #668FA0; text-decoration: none;}
+a:visited {color:#668FA0; text-decoration: none;}
 a:active {color: #F06292;}
-a:hover {transform: scale(1.2); color:#B8326A; text-decoration: underline;}
-#container{width: 800px; margin: 0 auto; padding: 10px; background-color: rgba(255,255,255,0.2); border-radius: 15px;}
+a:hover {transform: scale(1.2); color:#B5828C; text-decoration: underline;}
+#container{width: 800px; margin: 0 auto; padding: 10px; background-color: rgba(203, 233, 245, 0.3); border-radius: 15px;}
 .left, .right {
 	width: 48%;
 	height: 450px;
-	background-color: rgba(160, 71, 73,0.3);
+	background-color: rgba(181, 130, 140, 0.2);
 	border-radius: 25px;
 	padding: 10px;
     margin-bottom: 0;}
@@ -29,19 +40,19 @@ a:hover {transform: scale(1.2); color:#B8326A; text-decoration: underline;}
 	flex-wrap: wrap;}
 .navbar{
 	text-align: center;
-	background-color: rgba(235,160,171,1);
+	background-color: #F5CBD3;
 	padding: 10px;
 	margin-bottom: 10px;
 	border-radius: 10px;}
 .navbar a{
 	margin: 0 15px;
 	text-decoration: none;
-	color: #B8326A;
+	color: #173C4B;
 	font-weight: bold;
 	font-size: 20px;}
 .navbara:hover {
 	text-decoration: underline;
-	color: #D81B60;}
+	color: #753743;}
 html{
 	scroll-behavior: smooth;}
 nav { text-align: center; margin-bottom: 20px;}
@@ -49,28 +60,28 @@ nav { text-align: center; margin-bottom: 20px;}
 .wellness-table h3{
 	text-align: center;
 	font-family: 'Playfair Display', serif;
-	color: #D81B60;
+	color: #753743;
 	margin-bottom: 10px;}
 table{width: 100%;
 	border-collapse: collapse;
 	margin: 10px 0;
-	background-color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(181, 130, 140, 0.2);
 	border-radius: 10px;
 	overflow: hidden;
 	font-family: 'Poppins', sans-serif;}
 caption{font-family: 'Playfair Display', serif;
 	font-size: 1.2em;
 	padding: 10px;
-	color: #B8326A;}
-th, td{border: 1px solid #D81B60;
+	color: #753743;}
+th, td{border: 1px solid #A09D66;
 	padding: 12px;
 	text-align: center;
 	font-size: 16px;}
-thead{background-color: #FCE4EC;
-	color: #D81B60;}
+thead{background-color: #CBE9F5;
+	color: #173C4B;}
 .list-section{margin-top: 30px;
 padding: 20px;
-background-color: rgba(255, 255, 255, 0.3);
+background-color: rgba(181, 130, 140, 0.2);
 border-radius: 15px;}
 .emoji-bullets{list-style: none; padding-left: 0;}
 .emoji-bullets li:before{
@@ -92,7 +103,7 @@ display: inline-block}
 	text-align: center;}
 .iframe-section h3{
 	font-family: 'Playfair Display', serif;
-	color: #D81B60;
+	color: #753743;
 	margin-bottom: 10px;}
 .iframe-section p{
 	font-size: 16px;
@@ -102,13 +113,13 @@ display: inline-block}
 	margin-top: 40px;
 	text-align: center;
 	padding: 20px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(181, 130, 140, 0.2);
 	border-radius: 15px;}
 .tarot-pull h3{
-	color: #D81B60;
+	color: #753743;
 	font-family: 'Playfair Display', serif;}
 .tarot-pull button{
-	background-color: #D81B60;
+	background-color:#753743;
 	color: white;
 	border: none;
 	padding: 10px 20px;
@@ -120,10 +131,10 @@ display: inline-block}
 	margin-bottom: 20px;}
 .tarot-pull button:hover{
 	transform: scale(1.1);
-	background-color: #B8326A;}
+	background-color: #B5828C;}
 .tarot-card{
-	background-color: #fff0f5;
-	border: 2px solid #D81B60;
+	background-color: #F5F3CB;
+	border: 2px solid #A09D66;
 	border-radius: 12px;
 	padding: 20px;
 	max-width: 350px;
@@ -139,7 +150,7 @@ margin: 40px auto;
 	max-width: 600px;}
 .resources-section h3{
 	font-family: 'Playfair Display', serif;
-	color: #D81B60;
+	color: #753743;
 	margin-bottom: 10px;}
 .resources-section ul{
 	list-style-type: none;
@@ -149,13 +160,13 @@ margin: 40px auto;
 .resources-section li{
 	margin-bottom: 10px;}
 .resources-section a{
-	color: #B8326A;
+	color: #B5828C;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-size: 16px;}
 .resources-section a:hover {
 	text-decoration: underline;
-	color: #D81B60;}
+	color: #753743;}
 .checkin-form{
 	max-width: 600px;
 	margin: 50px auto;
@@ -166,7 +177,7 @@ margin: 40px auto;
 	text-align: center;
 	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);}
 .checkin-form h3 {
-	color: #D81B60;
+	color: #B5828C;
 	font-family: 'Playfair Display', serif;
 	margin-bottom: 20px;}
 .checkin-form label {
@@ -182,12 +193,12 @@ margin: 40px auto;
 	padding: 10px;
 	margin-top: 5px;
 	border-radius: 10px;
-	border: 1px solid #D81B60;
+	border: 1px solid #173C4B;
 	font-family: 'Poppins', sans-serid;
 	font-size: 16px;}
 .checkin-form button{
 	margin-top: 20px;
-	background-color: #D81B60;
+	background-color: #753743;
 	color: white;
 	border: none;
 	padding: 12px 20px;
@@ -196,7 +207,7 @@ margin: 40px auto;
 	cursor: pointer;
 	transition: background-color 0.3s ease-in-out;}
 .checkin-form button:hover{
-	background-color: #B8326A;}
+	background-color: #B5828C;}
 .audio-section {
 	text-align: center;
 	margin-top: 0px;
@@ -204,7 +215,7 @@ margin: 40px auto;
 	border-radius: 15px;}
 .audio-section h3{
 	font-family: 'Playfair Display', serif;
-	color: #D81B60;
+	color: #753743;
 	margin-bottom: 10px;}
 .audio-wrapper{
 	text-align: center;}
@@ -215,18 +226,33 @@ margin: 40px auto;
 	padding: 20px;
 	border-radius: 15px;
 	text-align: center;}
-.column-container {
+.boosts-flex{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	gap: 30px;}
+.left, .right {
+	flex: 1;
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	gap: 15px;
-	margin-top: 20px;}
+	background-color: rgba(245, 243, 203, 0.3);
+	padding: 10px;
+	border-radius: 20px;}
 .boost-item {
 	background-color: rgba(216, 27, 96, 0.2);
-	border: 1px solid #d81b60;
-	border-radius: 10px;
+	border: 2px solid #753743;
+	border-radius: 12px;
 	padding: 15px;
 	font-family: 'Poppins', sans-serif;
-	font-size: 16px;}
+	font-size: 16px;
+	text-align: center;
+	color:#173C4B;
+	min-height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;}
 .accordion-section {
 	max-width: 600px;
 	margin: 50px auto;
@@ -235,7 +261,7 @@ margin: 40px auto;
 	border-radius: 15px;
 	font-family: 'Poppins', sans-serif;}
 .ui-accordion .ui-accordion-header {
-	background: #D81B60;
+	background: #753743;
 	color: white;
 	padding: 10px 40px 10px 10px;
 	font-size: 18px;
@@ -260,3 +286,88 @@ margin: 40px auto;
 	border-radius: 8px;
 	font-size: 16px;
 	color: #4A4A4A;}
+.highlight-section{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 40px auto;
+	max-width: 800px;
+	flex-wrap: wrap;}
+.daily-box{
+	flex: 1;
+	background-color: rgba(245, 203, 211, 0.3);
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+	min-width: 300px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .05);}
+.daily-box h3{
+	color: #753743;
+	font-family: 'Playfair Display', serif;}
+.daily-box button {
+	background-color: #753743;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+	margin-top: 10px;}
+.daily-box button:hover{
+	transform: scale(1.1);
+	background-color: #B5828C;}
+@media screen and (max-width:599px){
+	#container {
+		width: 90%;
+		padding: 10px;}
+	.flex-container {
+		flex-direction: column;
+		gap: 20px;}
+	.left, .right{
+		width: 100%;
+		height: auto;}
+	.boosts-flex{
+		flex-direction: column;}
+	.left, .right {width: 100%;}
+	iframe {
+		width: 100%;
+		height: auto;}}
+@media screen and (min-width: 600px) and (max-width: 899px){
+	#container{
+		width: 95%;}
+	.flex-container{
+		flex-direction: row;
+		flex-wrap: wrap;}
+	.left, .right {
+		width: 48%;
+		height: auto;}
+	.boosts-flex{
+		flex-direction: row;
+		flex-wrap: wrap;}
+	.left, .right{
+		width: 48%;}}
+@media screen and (min-width: 900px){
+	#container {
+		width: 800px;}
+	.flex-container{
+		flex-direction: row;
+		gap: 10px;}
+	.left, .right {
+		width: 48%;
+		height: 450px;}
+	.boosts-flex{
+		flex-direction: row;}
+	.left, .right {
+		width: 48%;}}
+iframe[src*="open.spotify.com"] {
+	width: 100%;
+	border-radius: 12px;
+	min-height: 200px;}
+@media screen and (min-width: 600px){
+	iframe[src*="open.spotify.com"]{
+		min-height: 300px;}}
+@media screen and (min-width: 900px){
+	iframe[src*="open.spotify.com"]{
+		min-height: 352px;}}

@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 	<title>selfcaresite</title>
 	<link rel="stylesheet" href="main.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,8 +16,10 @@
 </head>
 <body>
 	<div id="container">
-	<header id="top"><h1 class="page-title">Sarah's Self Care</h1>
-		<p>Your go to space for daily <strong>self love.</strong></p></header>
+	<header id="top"><h1 class="page-title">
+		<img src="images/SGLogo.png" alt="Sarah's Self Care Logo" class="logo-image">
+		</h1>
+		<p class="bloom-subtitle">Gently <strong>bloom</strong> from within.</p></header>
 	<nav class="navbar">
 		<div class="navbar">
 		<a href="#top">Home</a>
@@ -24,23 +27,23 @@
 		<a href="#contact-section">Contact</a>
 			</div>
 		</nav>
-		<section class="intro-section">
-		<div class="flex-container">
-		<article class="left">
+		<section class="highlight-section">
+		<div class="daily-box">
 			<h3>Daily Affirmations 🌼</h3>
-			<h6>Hint: Click the image below to reveal your daily affirmation!</h6>
+			<h6>Hint: Click the image below to generate an affirmation yourself:</h6>
 			<img src="images/selflove.jpg.png" usemap="#caremap" alt="positive quote" title="learn to love yourself" width="200px">
             <map name="caremap">
               <area shape="rect" coords="7,12,191,188" href="https://bestofaffirmations.com/generator/" alt="positive quote" target="_blank">
-            </map>
-			<p>Keep going, you are doing better than you think!</p>
-			</article>
-		<article class="right">
+			</map>
+			<hr>
+			<h6>Here's one picked just for you today:</h6>
+			<p id="affirmation-text">Loading...</p>
+			</div>
+		<div class="daily-box">
 			<h3>Daily Tarot Pull 🃏</h3>
 			<p>Feeling cosmic? Click the button below to reveal a card for guidance today!</p>
 			<button onclick="pullTarotCard()">Reveal My Card</button>
 			<div id="tarot-card-output"></div>
-			</article>
 				</div>
 		</section>
 		<section class="audio-section">
@@ -150,11 +153,21 @@
 	</section>
 		 <section class="column-section">
 		<h3>Self-Care Boosts</h3>
-			 <div class="column-container">
+			 <div class="boosts-flex">
+				 <div class="left">
 			 <div class="boost-item">Drink more water</div>
 			 <div class="boost-item">Go outside for 10 minutes</div>	 
-		   	 <div class="boost-item">Write a kind note to yourself</div>	 
-			 </div>
+		   	 <div class="boost-item">Write a kind note to yourself</div>
+			 <div class="boost-item"> Strech your body</div>
+			 <div class="boost-item">Take 5 deep breaths</div>
+				 </div>
+				 <div class="right">
+			 <div class="boost-item">Listen to your favorite song</div>
+			 <div class="boost-item">Read one page of a book</div>
+			 <div class="boost-item">Say one affirmation out loud</div>
+			 <div class="boost-item">Declutter a small space</div>
+		  	 <div class="boost-item">Unplug from social media for 10 minutes</div>
+			  </div></div>
 		</section>
 <section class="accordion-section">
 		<h3>Self-Care Q + A</h3>
@@ -197,6 +210,17 @@
 	<script>
 	$(function() {
 		$("#selfcare-accordion").accordion();});
+	</script>
+	<script>
+	async function fetchAffirmation() {
+		try{
+			const response = await fetch("https://www.affirmations.dev/");
+			const data = await response.json();
+			document.getElementById("affirmation-text").textContent = data.affirmation;}
+		catch (error){
+			document.getElementById("affirmation-text").textContent = "You are doing great. Keep going!";}
+		}
+	fetchAffirmation();
 	</script>
 </body>
 </html>
